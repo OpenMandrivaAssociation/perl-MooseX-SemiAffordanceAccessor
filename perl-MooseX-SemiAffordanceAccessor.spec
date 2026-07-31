@@ -2,7 +2,7 @@
 %define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	0.10
-Release:	12
+Release:	1
 
 Summary:	Names accessors in a semi-affordance style
 License:	GPL+ or Artistic
@@ -34,8 +34,7 @@ attribute, then that attribute's naming scheme is left unchanged.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
@@ -45,7 +44,7 @@ make test || :
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes INSTALL LICENSE META.yml README.md
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
