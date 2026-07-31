@@ -2,7 +2,7 @@
 %define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	0.10
-Release:	10
+Release:	11
 
 Summary:	Names accessors in a semi-affordance style
 License:	GPL+ or Artistic
